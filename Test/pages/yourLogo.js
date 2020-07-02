@@ -49,13 +49,13 @@ base.signout = () => { return $('//*[@id="header"]/div[2]/div/div/nav/div[2]/a')
 //functions
 
 base.goToBasePage = () => {
-    console.log('step: looking for your Logo page')
+    console.log('step: looking for base page')
 
     browser.url('/')
 
     base.mainheader().waitForDisplayed()
 
-    console.log('step: found for your Logo page')
+    console.log('step: found for base page')
    
 }
 
