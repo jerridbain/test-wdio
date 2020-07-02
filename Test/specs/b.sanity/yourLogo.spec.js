@@ -1,4 +1,4 @@
-const base =require('../../pages/base.page')
+const base = require('../../pages/yourLogo')
 
 describe('As a user test the base page', () => {
     
@@ -12,7 +12,7 @@ describe('As a user test the base page', () => {
         base.women().moveTo()
     });
 
-    it('Then click on blouses', () => {
+    it('When I click on blouses', () => {
         base.blouses().waitForDisplayed()
         base.blouses().click()
         
@@ -25,32 +25,32 @@ describe('As a user test the base page', () => {
     });
 
 
-    it('Then click on add to cart', () => {
+    it('When I click on add to cart', () => {
         base.cart().waitForDisplayed()
         base.cart().click()
 
         
     });
 
-    it('Then click on proceed to cart', () => {
+    it('When I click on proceed to cart', () => {
         base.proceed().waitForDisplayed()
         base.proceed().click()
         
     });
 
-    it('Then click on checkout', () => {
+    it('When I click on checkout', () => {
         base.checkout().waitForDisplayed()
         base.checkout().click()
         
     });
 
-    it('Then enter email', () => {
+    it('When I enter my email address', () => {
         base.un().waitForDisplayed()
         base.un().setValue('jerridbain@gmail.com')
         
     });
 
-    it('Then enter password', () => {
+    it('When I enter my password', () => {
         base.pw().waitForDisplayed()
         base.pw().setValue('emcor139')
         
@@ -61,24 +61,24 @@ describe('As a user test the base page', () => {
         
     });
 
-    it('Then click on proceed to checkout', () => {
+    it('When I click on proceed to checkout', () => {
         base.checkout1().waitForDisplayed()
         base.checkout1().click()
     });
 
-    it('Then agree to terms of service', () => {
+    it('When I agree to terms of service', () => {
         base.checkbox().click()
         base.checkout2().click()
         
     });
 
-    it('Then click on pay by check', () => {
+    it('When I click on pay by check', () => {
         base.check().waitForDisplayed()
         base.check().click()
         
     });
 
-    it('Then I confirm my order', () => {
+    it('When I confirm my order', () => {
         base.order().waitForDisplayed()
         base.order().click()
     });
@@ -89,7 +89,7 @@ describe('As a user test the base page', () => {
           
     });
 
-    it('Then I sign out of my account', () => {
+    it('When I sign out of my account', () => {
         base.signout().click()
         
     });

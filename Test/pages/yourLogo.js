@@ -2,7 +2,7 @@ const base = {}
 
 // Locator
 
-base.header = () => { return $('//*[@id="header_logo"]/a/img') }
+base.mainheader = () => { return $('//*[@id="header_logo"]/a/img') }
 
 base.women = () => { return $('//*[@id="block_top_menu"]/ul/li[1]/a') }
 
@@ -49,13 +49,13 @@ base.signout = () => { return $('//*[@id="header"]/div[2]/div/div/nav/div[2]/a')
 //functions
 
 base.goToBasePage = () => {
-    console.log('step: looking for base page')
+    console.log('step: looking for your Logo page')
 
     browser.url('/')
 
-    base.header().waitForDisplayed()
+    base.mainheader().waitForDisplayed()
 
-    console.log('step: found for base page')
+    console.log('step: found for your Logo page')
    
 }
 

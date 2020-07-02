@@ -1,4 +1,4 @@
-const base = require('../../pages/base.page')
+const base = require('../../pages/yourLogo')
 
 describe('Smoke test Base page', () => {
     
@@ -8,14 +8,14 @@ describe('Smoke test Base page', () => {
     });
 
     it('Then validate the Base header exist', () => {
-        base.header().isExisting() 
+        base.mainheader().isExisting() 
     
     });
 
     it('Then validate the sub headaer exist', () => {
-        base.women().getText().includes('WOMEN')
-        base.dresses().getText().includes('DRESSES')
-        base.tshirts().getText().includes('T-SHIRTS')
+        base.women().getText().includes("WOMEN")
+        base.dresses().getText().includes("DRESSES")
+        base.tshirts().getText().includes("T-SHIRTS")
 
     });
 
