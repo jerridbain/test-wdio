@@ -1,4 +1,4 @@
-const base = require('../../pages/basePage')
+const base = require('../../pages/yourLogo')
 
 describe('As a user test the base page', () => {
     
