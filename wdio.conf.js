@@ -140,6 +140,7 @@ exports.config = {
         timeout: 60000,
         compilers: [
             '@babel/register',
+            
         ],
     },
     //

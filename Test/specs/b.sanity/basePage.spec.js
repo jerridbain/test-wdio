@@ -1,4 +1,4 @@
-const base = require('../../pages/yourLogo')
+const base = require('../../pages/basePage')
 
 describe('As a user test the base page', () => {
     
@@ -12,7 +12,7 @@ describe('As a user test the base page', () => {
         base.women().moveTo()
     });
 
-    it('When I click on blouses', () => {
+    it('And I click on blouses', () => {
         base.blouses().waitForDisplayed()
         base.blouses().click()
         
@@ -25,7 +25,7 @@ describe('As a user test the base page', () => {
     });
 
 
-    it('When I click on add to cart', () => {
+    it('And I click on add to cart', () => {
         base.cart().waitForDisplayed()
         base.cart().click()
 
