@@ -40,6 +40,12 @@ base.order = () => { return $('//*[@id="cart_navigation"]/button')}
 
 base.confirm = () => { return $('//*[@id="center_column"]/p[1]')}
 
+base.summer = () => { return $('//*[@id="block_top_menu"]/ul/li[2]/ul/li[3]/a')}
+
+base.printed = () => { return $('//*[@id="center_column"]/ul/li[2]/div/div[1]/div/a[1]/img')}
+
+base.addToCart = () => { return $('//*[@id="center_column"]/ul/li[2]/div/div[2]/div[2]/a[1]')}
+
 base.signout = () => { return $('//*[@id="header"]/div[2]/div/div/nav/div[2]/a')}
 
 

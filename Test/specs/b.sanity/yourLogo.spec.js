@@ -1,4 +1,5 @@
-const base = require('../../pages/yourLogo')
+const base = require('../../pages/yourLogo');
+const { mainheader, dresses, summer, printed, addToCart, proceed, checkout, checkbox } = require('../../pages/yourLogo');
 
 describe('As a user test the base page', () => {
     
@@ -89,6 +90,47 @@ describe('As a user test the base page', () => {
           
     });
 
+    it('When I click on main header', () => {
+        mainheader().waitForDisplayed()
+        mainheader().click()
+        
+    });
+
+    it('When I hoover over dresses', () => {
+        dresses().waitForDisplayed()
+        dresses().moveTo()
+        
+    });
+
+    it('When I click on summer dresses', () => {
+        summer().waitForDisplayed()
+        summer().click()
+        
+    });
+
+    it('Then I hoover over summer printed dresses', () => {
+        printed().waitForDisplayed()
+        printed().moveTo()
+        
+    });
+
+    it('When I click on add to cart', () => {
+        addToCart().waitForDisplayed()
+        addToCart().click()
+        
+    });
+
+    it('When I click on proceed to cart', () => {
+        proceed().waitForDisplayed()
+        proceed().click()
+        
+    });
+
+    it('When I click on checkout', () => {
+        checkout().waitForDisplayed()
+        checkout().click()
+        
+    });
     it('When I sign out of my account', () => {
         base.signout().click()
         
