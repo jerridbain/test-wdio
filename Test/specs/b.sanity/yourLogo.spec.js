@@ -33,18 +33,49 @@ describe('As a user test the base page', () => {
         
     });
 
+    it('When I click on main header', () => {
+        mainheader().waitForDisplayed()
+        mainheader().click()
+        
+    });
+
+    it('When I hoover over dresses', () => {
+        dresses().waitForDisplayed()
+        dresses().moveTo()
+        
+    });
+
+    it('When I click on summer dresses', () => {
+        summer().waitForDisplayed()
+        summer().click()
+        
+    });
+
+    it('Then I hoover over summer printed dresses', () => {
+        printed().waitForDisplayed()
+        printed().moveTo()
+        
+    });
+
+    it('When I click on add to cart', () => {
+        addToCart().waitForDisplayed()
+        addToCart().click()
+        
+    });
+
     it('When I click on proceed to cart', () => {
-        base.proceed().waitForDisplayed()
-        base.proceed().click()
+        proceed().waitForDisplayed()
+        proceed().click()
         
     });
 
     it('When I click on checkout', () => {
-        base.checkout().waitForDisplayed()
-        base.checkout().click()
+        checkout().waitForDisplayed()
+        checkout().click()
         
     });
 
+    
     it('When I enter my email address', () => {
         base.un().waitForDisplayed()
         base.un().setValue('jerridbain@gmail.com')
@@ -90,47 +121,7 @@ describe('As a user test the base page', () => {
           
     });
 
-    it('When I click on main header', () => {
-        mainheader().waitForDisplayed()
-        mainheader().click()
-        
-    });
-
-    it('When I hoover over dresses', () => {
-        dresses().waitForDisplayed()
-        dresses().moveTo()
-        
-    });
-
-    it('When I click on summer dresses', () => {
-        summer().waitForDisplayed()
-        summer().click()
-        
-    });
-
-    it('Then I hoover over summer printed dresses', () => {
-        printed().waitForDisplayed()
-        printed().moveTo()
-        
-    });
-
-    it('When I click on add to cart', () => {
-        addToCart().waitForDisplayed()
-        addToCart().click()
-        
-    });
-
-    it('When I click on proceed to cart', () => {
-        proceed().waitForDisplayed()
-        proceed().click()
-        
-    });
-
-    it('When I click on checkout', () => {
-        checkout().waitForDisplayed()
-        checkout().click()
-        
-    });
+    
     it('When I sign out of my account', () => {
         base.signout().click()
         
