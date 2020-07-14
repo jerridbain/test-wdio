@@ -1,21 +1,21 @@
-const base = require('../../pages/yourLogo')
+const yourLogo = require('../../pages/yourLogo')
 
-describe('Smoke test Base page', () => {
+describe('Smoke test your Logo page', () => {
     
-    it('Given I go to the Base page', () => {
-        base.goToBasePage();
+    it('Given I go to the your Logo page', () => {
+        yourLogo.goToyourLogo();
 
     });
 
     it('Then validate the Base header exist', () => {
-        base.mainheader().isExisting() 
+        yourLogo.mainheader().isExisting() 
     
     });
 
     it('Then validate the sub headaer exist', () => {
-        base.women().getText().includes("WOMEN")
-        base.dresses().getText().includes("DRESSES")
-        base.tshirts().getText().includes("T-SHIRTS")
+        yourLogo.women().getText().includes("WOMEN")
+        yourLogo.dresses().getText().includes("DRESSES")
+        yourLogo.tshirts().getText().includes("T-SHIRTS")
 
     });
 

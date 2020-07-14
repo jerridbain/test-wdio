@@ -1,129 +1,128 @@
-const base = require('../../pages/yourLogo');
-const { mainheader, dresses, summer, printed, addToCart, proceed, checkout, checkbox } = require('../../pages/yourLogo');
+const yourLogo = require('../../pages/yourLogo')
 
-describe('As a user test the base page', () => {
+describe('As a user test the your Logo page', () => {
     
-    it('Given I am on the base page', () => {
-        base.goToBasePage()
+    it('Given I am on the your Logo page', () => {
+        yourLogo.goToyourLogo()
 
     });
 
     it('As a user hoover over women', () => {
-        base.women().waitForDisplayed()
-        base.women().moveTo()
+        yourLogo.women().waitForDisplayed()
+        yourLogo.women().moveTo()
     });
 
     it('And I click on blouses', () => {
-        base.blouses().waitForDisplayed()
-        base.blouses().click()
+        yourLogo.blouses().waitForDisplayed()
+        yourLogo.blouses().click()
         
     });
 
     it('Then hoover over img', () => {
-        base.img().waitForDisplayed()
-        base.img().moveTo()
+        yourLogo.img().waitForDisplayed()
+        yourLogo.img().moveTo()
         
     });
 
 
     it('And I click on add to cart', () => {
-        base.cart().waitForDisplayed()
-        base.cart().click()
+        yourLogo.cart().waitForDisplayed()
+        yourLogo.cart().click()
 
         
     });
 
     it('When I click on main header', () => {
-        mainheader().waitForDisplayed()
-        mainheader().click()
+        yourLogo.mainheader().waitForDisplayed()
+        yourLogo.mainheader().click()
         
     });
 
     it('When I hoover over dresses', () => {
-        dresses().waitForDisplayed()
-        dresses().moveTo()
+        yourLogo.dresses().waitForDisplayed()
+        yourLogo.dresses().moveTo()
         
     });
 
     it('When I click on summer dresses', () => {
-        summer().waitForDisplayed()
-        summer().click()
+        yourLogo.summer().waitForDisplayed()
+        yourLogo.summer().click()
         
     });
 
     it('Then I hoover over summer printed dresses', () => {
-        printed().waitForDisplayed()
-        printed().moveTo()
+        yourLogo.printed().waitForDisplayed()
+        yourLogo.printed().moveTo()
         
     });
 
     it('When I click on add to cart', () => {
-        addToCart().waitForDisplayed()
-        addToCart().click()
+        yourLogo.addToCart().waitForDisplayed()
+        yourLogo.addToCart().click()
         
     });
 
     it('When I click on proceed to cart', () => {
-        proceed().waitForDisplayed()
-        proceed().click()
+        yourLogo.proceedToCart().waitForDisplayed()
+        yourLogo.proceedToCart().click()
         
     });
 
     it('When I click on checkout', () => {
-        checkout().waitForDisplayed()
-        checkout().click()
+        yourLogo.checkout1().waitForDisplayed()
+        yourLogo.checkout1().click()
         
     });
 
     
     it('When I enter my email address', () => {
-        base.un().waitForDisplayed()
-        base.un().setValue('jerridbain@gmail.com')
+        yourLogo.un().waitForDisplayed()
+        yourLogo.un().setValue('jerridbain@gmail.com')
         
     });
 
     it('When I enter my password', () => {
-        base.pw().waitForDisplayed()
-        base.pw().setValue('emcor139')
+        yourLogo.pw().waitForDisplayed()
+        yourLogo.pw().setValue('emcor139')
         
     });
 
     it('Then click the sign in button', () => {
-        base.button().click()
+        yourLogo.button().click()
         
     });
 
     it('When I click on proceed to checkout', () => {
-        base.checkout1().waitForDisplayed()
-        base.checkout1().click()
+        yourLogo.checkout2().waitForDisplayed()
+        yourLogo.checkout2().click()
     });
 
     it('When I agree to terms of service', () => {
-        base.checkbox().click()
-        base.checkout2().click()
+        yourLogo.checkbox().click()
+        yourLogo.checkout3().click()
         
     });
 
     it('When I click on pay by check', () => {
-        base.check().waitForDisplayed()
-        base.check().click()
+        yourLogo.check().waitForDisplayed()
+        yourLogo.check().click()
         
     });
 
     it('When I confirm my order', () => {
-        base.order().waitForDisplayed()
-        base.order().click()
+        yourLogo.order().waitForDisplayed()
+        yourLogo.order().click()
     });
 
     it('Then check for My Store is complete', () => {
-        base.confirm().waitForDisplayed()
-        base.confirm().getText().includes("Your order on My Store is complete.")
+        yourLogo.confirm().waitForDisplayed()
+        yourLogo.confirm().getText().includes("Your order on My Store is complete.")
           
     });
 
     
     it('When I sign out of my account', () => {
-        base.signout().click()
+        yourLogo.signout().click()
         
     });
 
