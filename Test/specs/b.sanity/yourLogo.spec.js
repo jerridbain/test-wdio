@@ -12,20 +12,20 @@ describe('As a user test the your Logo page', () => {
         yourLogo.women().moveTo()
     });
 
-    it('And I click on blouses', () => {
+    it('When I click on blouses', () => {
         yourLogo.blouses().waitForDisplayed()
         yourLogo.blouses().click()
         
     });
 
-    it('Then hoover over img', () => {
+    it('When I hoover over img', () => {
         yourLogo.img().waitForDisplayed()
         yourLogo.img().moveTo()
         
     });
 
 
-    it('And I click on add to cart', () => {
+    it('When I click on add to cart', () => {
         yourLogo.cart().waitForDisplayed()
         yourLogo.cart().click()
 
